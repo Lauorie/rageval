@@ -75,11 +75,3 @@ if __name__ == '__main__':
     assessment_types = ['groundedness', 'context_recall', 'context_precision', 'faithfulness', 'answer_relevance']
     assessment = Assessment(model_path, excel_path)
     assessment.save_responses(assessment_types, save_path)
-    
-    
-        
-
-
-
-
-

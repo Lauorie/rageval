@@ -1,4 +1,4 @@
-mport os
+import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7"
 import json
 import time
@@ -48,7 +48,7 @@ def get_responses(system_message, user_messages, batch_size=4):
         responses.extend(batch_responses)
 
     return responses
-  trans_system_prompt_ = 'You are an expert in translation.'
+trans_system_prompt_ = 'You are an expert in translation.'
 trans_user_prompt_ = 'Please translate the following text into Chinese:\ n'
 
 summary_system_prompt_ = 'You are an expert in text summarization.'
